@@ -41,6 +41,7 @@ namespace Portfolio_with_ASP.NET
                 Response.Write("<script>alert('Please fill in all the fields.')</script>");
                 //ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "alertMessage", "alert('Please fill in all the fields.')", true);
             }
+            Response.Redirect("MainPage.aspx");
         }
 
         protected void Admin_Click(object sender, EventArgs e)
