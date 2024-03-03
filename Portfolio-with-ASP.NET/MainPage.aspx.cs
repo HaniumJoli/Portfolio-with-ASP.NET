@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -22,6 +23,14 @@ namespace Portfolio_with_ASP.NET
 
             if (name != "" && email != "" && message != "")
             {
+                SqlConnection con = new SqlConnection("Server=DESKTOP-HANIUM\\SQLEXPRESS; Database=hanium_admin; Integrated Security=True");
+                SqlCommand cmd = new SqlCommand("INSERT INTO messages (name, email, message) VALUES (@name, @email, @message)",con);
+                cmd.Parameters.AddWithValue("@name", name);
+                cmd.Parameters.AddWithValue("@email", email);
+                cmd.Parameters.AddWithValue("@message", message);
+                con.Open(); 
+                cmd.ExecuteNonQuery();
+                con.Close();
                 Response.Write("<script>alert('Thank you for your message, " + name + ". We will get back to you soon!')</script>");
                 //ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "alertMessage", "alert('Thank you for your message, " + name + ". We will get back to you soon!')", true);
             }

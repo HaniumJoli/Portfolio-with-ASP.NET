@@ -39,17 +39,6 @@ namespace Portfolio_with_ASP.NET
             passwordBox.Text = "";
             Response.Redirect("AdminPanel.aspx");
 
-            //if (rememberMe.Checked)
-            //{
-            //    Response.Cookies["username"].Value = nameBox.Text;
-            //    Response.Cookies["password"].Value = passwordBox.Text;
-            //    Response.Cookies["username"].Expires = DateTime.Now.AddHours(1);
-            //    Response.Cookies["password"].Expires = DateTime.Now.AddHours(1);
-            //}
-            //else
-            //{
-
-            //}
         }
         protected void Login_Click(object sender, EventArgs e)
         {

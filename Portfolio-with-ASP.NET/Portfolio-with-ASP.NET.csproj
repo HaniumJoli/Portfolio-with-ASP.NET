@@ -69,6 +69,7 @@
   <ItemGroup>
     <Content Include="AdminPanel.aspx" />
     <Content Include="Dashboard.aspx" />
+    <Content Include="EditProject.aspx" />
     <Content Include="icons\icon.png" />
     <Content Include="image\app-store.jpg" />
     <Content Include="image\boho.jpg" />
@@ -95,6 +96,13 @@
     </Compile>
     <Compile Include="Dashboard.aspx.designer.cs">
       <DependentUpon>Dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditProject.aspx.cs">
+      <DependentUpon>EditProject.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditProject.aspx.designer.cs">
+      <DependentUpon>EditProject.aspx</DependentUpon>
     </Compile>
     <Compile Include="MainPage.aspx.cs">
       <DependentUpon>MainPage.aspx</DependentUpon>
