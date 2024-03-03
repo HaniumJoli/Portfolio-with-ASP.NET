@@ -197,6 +197,43 @@
         .form-btn {
             margin-top: 2rem;
         }
+
+        #ProjectTable {
+            width: 100%;
+            border-collapse: collapse;
+            border: 1px solid #06263b;
+            border-radius: 8px;
+        }
+
+        #ProjectTable th {
+            background-color: #081c29;
+            color: aqua;
+            padding: 10px;
+            text-align: center;
+        }
+
+        #ProjectTable td {
+            padding: 10px;
+            text-align: center;
+            border-bottom: 1px solid #06263b;
+        }
+
+        #ProjectTable tr:nth-child(even) {
+            background-color: #06263b;
+        }
+
+        #ProjectTable tr:nth-child(odd) {
+            background-color: #081c29;
+        }
+
+        #ProjectTable tr:hover {
+            background-color: #06263b;
+        }
+
+         #ProjectTable input {
+             margin-top:.5rem;
+         }
+
     </style>
 </head>
 <body>

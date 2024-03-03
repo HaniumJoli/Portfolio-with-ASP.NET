@@ -12,6 +12,8 @@ namespace Portfolio_with_ASP.NET
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            List<Projects> projects = new List<Projects>();
+            SqlConnection con = new SqlConnection("Server=DESKTOP-HANIUM\\SQLEXPRESS; Database=hanium_admin; Integrated Security=True");
 
         }
 
